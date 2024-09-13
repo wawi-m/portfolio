@@ -22,6 +22,21 @@
             position: relative;
             z-index: 1; 
         }
+        .header-content {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+        }
+        .home-icon {
+            position: absolute;
+            left: 20px;
+        }
+        .home-icon a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 24px; /* Adjust size as needed */
+        }
         nav a {
             color: #fff;
             margin: 0 15px;
@@ -94,13 +109,22 @@
 </head>
 <body>
     <header>
-        <h1>Gladys Mwangi</h1>
-        <nav>
-            <a href="#about">About</a>
-            <a href="portfolio/index.html">Portfolio</a> <!-- Updated link to portfolio section -->
-            <a href="#projects">Projects</a>
-            <a href="#contact">Contact</a>
-        </nav>
+         <div class="header-content">
+            <div class="home-icon">
+                <a href="https://githubusername.github.io/" title="Home">
+                    <i class="fa-solid fa-house"></i>
+                </a>
+            </div>
+            <div>
+                <h1>Gladys Mwangi</h1>
+                <nav class="nav">
+                    <a href="#about">About</a>
+                    <a href="portfolio/index.html">Portfolio</a> <!-- Updated link to portfolio section -->
+                    <a href="#projects">Projects</a>
+                    <a href="#contact">Contact</a>
+                </nav>
+            </div>
+        </div>                         
     </header>
 
     <div class="container">
